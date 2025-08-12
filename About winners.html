@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <img src="osage  logo.png" alt="osage logo">
+  </title>
+</head>
+<style>
+  :root {
+    --primary-color: #2563eb;
+    --secondary-color: #0f172a;
+    --accent-color: #4ade80;
+    --light-color: #f8fafc;
+    --dark-color: #0f172a;
+    --text-color: #334155;
+    --black-color: #000;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24 24 27);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  /* Header Styles */
+  header {
+    background-color: var(--dark);
+   color: white;
+   padding: 1rem 2rem;
+   position: relative;
+   width: 100%;
+   top: 0;
+   z-index: 100;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.logo {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: white;
+   display: flex;
+   align-items: center;
+}
+
+.logo span {
+   color: var(--secondary);
+}
+
+.nav-links {
+   display: flex;
+   list-style: none;
+}
+
+.nav-links li {
+   margin: 0 1rem;
+}
+
+.nav-links a {
+   color: white;
+   text-decoration: none;
+   font-weight: 500;
+   transition: color 0.3s;
+}
+
+.nav-links a:hover {
+   color: var(--secondary);
+}
+
+.hamburger {
+   display: none;
+   cursor: pointer;
+}
+
+/* Hero Section */
+  .hero {
+    background-color: #000000;
+    background-image: url('https://epe.brightspotcdn.com/dims4/default/a0ce240/2147483647/strip/true/crop/2488x1688+18+0/resize/840x570!/brightness/0x18/quality/90/?url=https%3A%2F%2Fepe-brightspot.s3.us-east-1.amazonaws.com%2Fad%2Fbb%2Fb58583454b589ee570940ed056a9%2Fdata-security-lock-binary-code-022023-913017342.jpg'); /* Replace with your background image */
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 8rem 2rem 6rem;
+    text-align: center;
+  }
+
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+.hero-content {
+   max-width: 800px;
+   margin: 0 auto;
+}
+.hero h1 {
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+}
+.hero p {
+   font-size: 1.2rem;
+   margin-bottom: 2rem;
+   opacity: 0.9;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* About Content */
+.about-content {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: 2;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .about-card {
+    background-color: black;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(118, 113, 113, 0.1)
+  }
+  .about-card:hover {
+    transform: translateY,X-UA-Compatible(-20px);
+    box-shadow: 0 26px 16px -5px rgba(219, 179, 139, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .about-card h3 {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+
+    .p {
+      color: #f1f5f9;
+    }
+  }
+
+  video{
+    justify-content: left;
+    align-items: center;
+  }
+
+  .about-card-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+
+    .about-card:hover {
+    transform: translateY,X-UA-Compatible(-20px);
+    box-shadow: 0 40px 35px -15px rgba(233, 135, 135, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  }
+
+  /* Team Section */
+  .team-section {
+    background-color: #f1f5f9;
+    padding: 5rem 0;
+    transform: translateY(-5px);
+  }
+
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+
+  .team-member {
+    background-color: wheat;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .team-img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  .team-info {
+    padding: 1.5rem;
+  }
+  .team-info h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+  };
+
+  .team-info p {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-top: 0;
+  };
+
+  .video{
+    position: fixed
+    margin auto;
+   padding-top: 12px;
+   align-content: center;
+  }
+
+  .client-section{
+    overflow: hidden;
+     padding: 5rem 0;
+     transform: translateY(-5px);
+  };
+  
+  .clients-grand{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    overflow: hidden;
+    margin-top: 3rem;
+    position: inherit;
+  }
+
+  .client-logo{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit,  minmax(250px, 1fr));
+  }
+
+  
+  /* Footer */
+  .footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 3rem 0;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  .footer-col h4 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+
+  .footer-col h4::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+    bottom: 0;
+    left: 0;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 0.8rem;
+  }
+
+  
+  .footer-col ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-col ul li a:hover {
+    color: var(--accent-color);
+  }
+
+</style>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="osage  logo.png" alt="" srcset="" width="160">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About winners.html">AboutUS</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="Project">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>About Osage-Tech</h1>
+      <p>
+        We engineer digital experiences that delight users and drive business
+        growth
+      </p>
+    </div>
+  </section>
+
+  <!-- Main About Content -->
+  <section class="about-content">
+    <div class="container">
+      <h2 class="section-title" style="color: wheat;">Our Story</h2>
+      <p>
+       <span style="color: #f1f5f9;">At Osage-Tech, we make custom software, web design, digital marketing,
+      and social media management simple and fun. With premier consulting
+      services, contributions to open platforms like WordPress, and
+      innovative tools that simplify web publishing, we're dedicated to
+      transforming how businesses engage with technology.</span>
+      </p>
+
+      <p>
+        <span style="color: #f1f5f9;">We don't just "make" things – we engineer them. Our team consists of
+        passionate problem-solvers built to create and wired to delight. From
+        beautiful pixels to beautiful code, we constantly refine and improve,
+        applying our technical expertise to your business goals.</span>
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card hover"></div>
+          <div class="about-card-icon">💻</div>
+          <h3>Custom Software</h3>
+          <p>
+            We build tailored software solutions that solve complex business
+            challenges and streamline operations.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card hover"></div>
+          <div class="about-card-icon">🎨</div>
+          <h3>Web Design</h3>
+          <p>
+            Our designs combine aesthetic beauty with functional excellence to
+            create engaging digital experiences.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card hover"></div>
+          <div class="about-card-icon">📈</div>
+          <h3>Digital Marketing</h3>
+          <p>
+            Strategic campaigns that connect your brand with target audiences
+            and drive measurable results.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card hover"></div>
+          <div class="about-card-icon">📱</div>
+          <h3>Social Media</h3>
+          <p>
+            Building your brand presence across platforms with engaging
+            content and community management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container">
+      <h2 class="section-title" style="color: wheat;">Our Team</h2>
+      <p>
+        Behind every successful project is our talented team of designers,
+        developers, and strategists who are passionate about creating
+        exceptional digital experiences.
+      </p>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="pictures/Gabriel.jpg" alt="Team Member" class="team-img" />
+          <div class="team-info">
+            <h3>Oyinlola Gabriel</h3>
+            <p><span style="color: #334155;">Chief Technology Officer</span></p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="pictures/CMS Director.jpg" alt="Team Member" class="team-img" height="-1px"/>
+          <div class="team-info">
+            <h3>Oyinlola Michael</h3>
+            <p><span style="color: #334155;">Creative Director</span></p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="pictures/ui ux designer.jpg" alt="Team Member" class="team-img" />
+          <div class="team-info">
+            <h3>Mayowa Adejuyigbe </h3>
+            <p><span style="color: #334155;">Ui ux  Director</span></p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="pictures/MD .png" alt="Team Member" class="team-img"/>
+          <div class="team-info">
+            <h3>Olatise Feyisayo</h3>
+            <p><span style="color: #334155;">Digital Marketing Specialist</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Team member section ends>
+    <!- Clients Section -->
+
+    <!--Background animation  section-->
+<div class="lines">
+  <div class="line">
+    <video width="1500" height="700" controls  autoplay loop>
+      <source src="finder.mp4" type="">
+    </video>
+  </div>
+  <!--video intrduction to the  oage tech ended-->
+  <section class="clients-section">
+    <div class="container">
+      <h2 class="section-title" style="margin-left: auto; margin-right: auto">
+        Trusted By Industry Leaders
+      </h2>
+      <p>
+        <span style="color: #f1f5f9;">We've had the privilege of collaborating with diverse clients across
+        various industries:</span>
+      </p>
+
+      <marquee behavior="left" direction="360">
+        <div class="clients-grid">
+          <div class="client-logo">
+            <img src="https://i.postimg.cc/yNWV1GRY/Good-Firms-Logo.png" alt="Goodfirm" />
+          </div>
+          <div class="client-logo">
+            <img src="https://i.postimg.cc/HxR0ZFwJ/google.png" alt="GOOGLE" />
+          </div>
+          <div class="client-logo">
+            <img src="https://i.postimg.cc/htcL5Ld0/trustpilotlogo.png" alt="Trustpilot" />
+          </div>
+          <div class="client-logo">
+            <img src="https://i.postimg.cc/DZkyxgWv/Better-Business-Bureau-Symbol.png" alt="BBB" />
+          </div>
+        </div>
+        <h2>goodness</h2>
+      </marquee>
+    </div>
+  </section>
+  
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <h2><span style="color: #f1f5f9;">Ready to Transform Your Digital Presence?</span></h2>
+      <p><span style="color: #f1f5f9;">Let's create something amazing together.</span></p>
+      <a href="mailto:osgetech0@gmail.com">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Osage-Tech</h4>
+          <p>
+            Making technology simple and fun through engineering excellence
+            and creative innovation.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/page2.html">Custom Software</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Social Media</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="oyinlolagabriel.dev@gmail.com">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="Index.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 Osage-Tech. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+:root {
+   --primary: #2563eb;
+   --primary-dark: #1d4ed8;
+   --secondary: #10b981;
+   --dark: #1f2937;
+   --light: #f9fafb;
+   --gray: #6b7280;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background-color: var(--light);
+   background-color: #000022;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2000' height='2000' viewBox='0 0 800 800'%3E%3Cg fill='none' %3E%3Cg stroke='%230C5C22' stroke-width='17'%3E%3Cline x1='-8' y1='-8' x2='808' y2='808'/%3E%3Cline x1='-8' y1='792' x2='808' y2='1608'/%3E%3Cline x1='-8' y1='-808' x2='808' y2='8'/%3E%3C/g%3E%3Cg stroke='%2300592a' stroke-width='16'%3E%3Cline x1='-8' y1='767' x2='808' y2='1583'/%3E%3Cline x1='-8' y1='17' x2='808' y2='833'/%3E%3Cline x1='-8' y1='-33' x2='808' y2='783'/%3E%3Cline x1='-8' y1='-783' x2='808' y2='33'/%3E%3C/g%3E%3Cg stroke='%23005531' stroke-width='15'%3E%3Cline x1='-8' y1='742' x2='808' y2='1558'/%3E%3Cline x1='-8' y1='42' x2='808' y2='858'/%3E%3Cline x1='-8' y1='-58' x2='808' y2='758'/%3E%3Cline x1='-8' y1='-758' x2='808' y2='58'/%3E%3C/g%3E%3Cg stroke='%23005138' stroke-width='14'%3E%3Cline x1='-8' y1='67' x2='808' y2='883'/%3E%3Cline x1='-8' y1='717' x2='808' y2='1533'/%3E%3Cline x1='-8' y1='-733' x2='808' y2='83'/%3E%3Cline x1='-8' y1='-83' x2='808' y2='733'/%3E%3C/g%3E%3Cg stroke='%23004d3e' stroke-width='13'%3E%3Cline x1='-8' y1='92' x2='808' y2='908'/%3E%3Cline x1='-8' y1='692' x2='808' y2='1508'/%3E%3Cline x1='-8' y1='-108' x2='808' y2='708'/%3E%3Cline x1='-8' y1='-708' x2='808' y2='108'/%3E%3C/g%3E%3Cg stroke='%23004843' stroke-width='12'%3E%3Cline x1='-8' y1='667' x2='808' y2='1483'/%3E%3Cline x1='-8' y1='117' x2='808' y2='933'/%3E%3Cline x1='-8' y1='-133' x2='808' y2='683'/%3E%3Cline x1='-8' y1='-683' x2='808' y2='133'/%3E%3C/g%3E%3Cg stroke='%23004448' stroke-width='11'%3E%3Cline x1='-8' y1='642' x2='808' y2='1458'/%3E%3Cline x1='-8' y1='142' x2='808' y2='958'/%3E%3Cline x1='-8' y1='-158' x2='808' y2='658'/%3E%3Cline x1='-8' y1='-658' x2='808' y2='158'/%3E%3C/g%3E%3Cg stroke='%23003f4b' stroke-width='10'%3E%3Cline x1='-8' y1='167' x2='808' y2='983'/%3E%3Cline x1='-8' y1='617' x2='808' y2='1433'/%3E%3Cline x1='-8' y1='-633' x2='808' y2='183'/%3E%3Cline x1='-8' y1='-183' x2='808' y2='633'/%3E%3C/g%3E%3Cg stroke='%23003b4d' stroke-width='9'%3E%3Cline x1='-8' y1='592' x2='808' y2='1408'/%3E%3Cline x1='-8' y1='192' x2='808' y2='1008'/%3E%3Cline x1='-8' y1='-608' x2='808' y2='208'/%3E%3Cline x1='-8' y1='-208' x2='808' y2='608'/%3E%3C/g%3E%3Cg stroke='%2300364e' stroke-width='8'%3E%3Cline x1='-8' y1='567' x2='808' y2='1383'/%3E%3Cline x1='-8' y1='217' x2='808' y2='1033'/%3E%3Cline x1='-8' y1='-233' x2='808' y2='583'/%3E%3Cline x1='-8' y1='-583' x2='808' y2='233'/%3E%3C/g%3E%3Cg stroke='%2300314e' stroke-width='7'%3E%3Cline x1='-8' y1='242' x2='808' y2='1058'/%3E%3Cline x1='-8' y1='542' x2='808' y2='1358'/%3E%3Cline x1='-8' y1='-558' x2='808' y2='258'/%3E%3Cline x1='-8' y1='-258' x2='808' y2='558'/%3E%3C/g%3E%3Cg stroke='%23002c4c' stroke-width='6'%3E%3Cline x1='-8' y1='267' x2='808' y2='1083'/%3E%3Cline x1='-8' y1='517' x2='808' y2='1333'/%3E%3Cline x1='-8' y1='-533' x2='808' y2='283'/%3E%3Cline x1='-8' y1='-283' x2='808' y2='533'/%3E%3C/g%3E%3Cg stroke='%23002749' stroke-width='5'%3E%3Cline x1='-8' y1='292' x2='808' y2='1108'/%3E%3Cline x1='-8' y1='492' x2='808' y2='1308'/%3E%3Cline x1='-8' y1='-308' x2='808' y2='508'/%3E%3Cline x1='-8' y1='-508' x2='808' y2='308'/%3E%3C/g%3E%3Cg stroke='%23002245' stroke-width='4'%3E%3Cline x1='-8' y1='467' x2='808' y2='1283'/%3E%3Cline x1='-8' y1='317' x2='808' y2='1133'/%3E%3Cline x1='-8' y1='-333' x2='808' y2='483'/%3E%3Cline x1='-8' y1='-483' x2='808' y2='333'/%3E%3C/g%3E%3Cg stroke='%23001d40' stroke-width='3'%3E%3Cline x1='-8' y1='342' x2='808' y2='1158'/%3E%3Cline x1='-8' y1='442' x2='808' y2='1258'/%3E%3Cline x1='-8' y1='-458' x2='808' y2='358'/%3E%3Cline x1='-8' y1='-358' x2='808' y2='458'/%3E%3C/g%3E%3Cg stroke='%2300173a' stroke-width='2'%3E%3Cline x1='-8' y1='367' x2='808' y2='1183'/%3E%3Cline x1='-8' y1='417' x2='808' y2='1233'/%3E%3Cline x1='-8' y1='-433' x2='808' y2='383'/%3E%3Cline x1='-8' y1='-383' x2='808' y2='433'/%3E%3C/g%3E%3Cg stroke='%23013' stroke-width='1'%3E%3Cline x1='-8' y1='392' x2='808' y2='1208'/%3E%3Cline x1='-8' y1='-408' x2='808' y2='408'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+   background-attachment: fixed;
+}
+
+header {
+   background-color: rgb(24 24 27);
+   color: white;
+   padding: 1rem 2rem;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   z-index: 100;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.logo {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: white;
+   display: flex;
+   align-items: center;
+}
+
+.logo span {
+   color: var(--secondary);
+}
+
+.nav-links {
+   display: flex;
+   list-style: none;
+}
+
+.nav-links li {
+   margin: 0 1rem;
+}
+
+.nav-links a {
+   color: white;
+   text-decoration: none;
+   font-weight: 500;
+   transition: color 0.3s;
+}
+
+.nav-links a:hover {
+   color: var(--secondary);
+}
+
+.hamburger {
+   display: none;
+   cursor: pointer;
+}
+
+.intro {
+   background-color: #0b0f0c;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%230e6611' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23460000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23006946' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%2353001b' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23006880' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%235c0033' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%230063b0' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%235d054e' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%230054c3' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23511d6c' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%235f2daa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%232e3288' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+   background-attachment: fixed;
+   background-size: cover;
+   padding: 8rem 2rem 6rem;
+   text-align: center;
+}
+
+.intro-content {
+   max-width: 800px;
+   margin: 0 auto;
+   position: relative;
+   display: inline-block;
+   animation: popup 2s ease-out;
+
+   @keyframes popup {
+      1% {
+         transform: scale(0);
+         opacity: 0;
+      }
+
+      100% {
+         transform: scale(1);
+         opacity: 1;
+      }
+   }
+}
+
+.intro-h1 {
+   font-size: 2.5rem;
+   position: relative;
+   display: inline-block;
+   animation: popup 2s ease-out;
+
+   @keyframes popup {
+      1% {
+         transform: scale(0);
+         opacity: 0;
+      }
+
+      100% {
+         transform: scale(1);
+         opacity: 1;
+      }
+   }
+}
+
+.intro p {
+   font-size: 1.2rem;
+   margin-bottom: 2rem;
+   opacity: 0.9;
+   stroke-linecap: round;
+}
+
+.Menu-data {
+   content: var(--dark);
+}
+
+.table-background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(45deg, rgba(71, 240, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(71, 240, 255, 0.05) 50%, rgba(71, 240, 255, 0.05) 75%, transparent 75%);
+   background-size: 20px 20px;
+   z-index: -1;
+   animation: tableBackgroundMove 20s linear infinite;
+}
+
+@keyframes tableBackgroundMove {
+   0% {
+      background-position: 0 0;
+   }
+
+   100% {
+      background-position: 40px 40px;
+   }
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   border-color: #000022;
+   border-radius: 18;
+   background-color: #000022
+}
+
+;
+
+.table-list {
+   position: inherit;
+   margin: auto;
+   padding-top: 12px;
+   align-content: center;
+   .list-topic {
+      align-content: center;
+      position: relative;
+      padding-bottom: 12px;
+   }
+}
+
+.m5-modules {
+   padding: 12px;
+   padding-top: 1pc;
+   padding-bottom: 2pc;
+   margin-right: 42px;
+   border-top: 12pc;
+  border-style: double;
+   display: inline-flexbox;
+   text-align: left;
+};
+
+.m5-mode{
+   image-rendering: var(--dark);
+};
+
+.m5-modular{
+   padding: 0%;
+   border: #0b0f0c;
+}
+
+table th {
+   font-weight: bold;
+   padding-bottom: -20pc;
+   offset-distance: 1px;
+}
+
+table tr:hover {
+   background-color: rgba(248, 249, 249, 0.947);
+}
+
+.roadmap {
+   padding: 100px 0;
+}
+
+.contact {
+   background-color: var(--dark);
+   color: white;
+}
+
+.contact-container {
+   max-width: 800px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 2rem;
+}
+
+.contact-info h3,
+.contact-form h3 {
+   margin-bottom: 1.5rem;
+   color: white;
+}
+
+.contact-item {
+   display: flex;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.contact-icon {
+   margin-right: 1rem;
+   color: var(--secondary);
+}
+
+.form-group {
+   margin-bottom: 1.5rem;
+}
+
+.form-control {
+   width: 100%;
+   padding: 0.8rem;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+   background-color: rgba(255, 255, 255, 0.1);
+   color: white;
+}
+
+.form-control::placeholder {
+   color: rgba(255, 255, 255, 0.7);
+}
+
+textarea.form-control {
+   min-height: 120px;
+   resize: vertical;
+}
+ /* Footer */
+ footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+ }
+
+ .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+
+ .social-links {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+ }
+
+ .social-link {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+ }
+
+ .social-link:hover {
+    color: var(--secondary);
+ }
+
+ .copyright {
+    opacity: 0.7;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+ }
+
+ @media (max-width: 768px) {
+    .nav-links {
+       display: none;
+    }
+
+    .hamburger {
+       display: block;
+    }
+
+    .hero h1 {
+       font-size: 2rem;
+    }
+
+    .btn {
+       display: block;
+       width: 100%;
+       margin: 0.5rem 0;
+    }
+
+    .btn-outline {
+       margin-left: 0;
+    }
+ }
